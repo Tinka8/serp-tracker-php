@@ -127,8 +127,7 @@ $input = [
     'zastavarna-bilina.cz' => [
         'zastavárna Bílina',
         'zastavárna Seifertova',
-        'zastavárna Nápravník',
-        'zlato Bílina'
+        'zastavárna Nápravník'
     ],
 ];
 
