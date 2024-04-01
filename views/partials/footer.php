@@ -1,4 +1,4 @@
-    <div class="wrapper bg-zinc-200 pb-10">
+    <div class="wrapper pb-10 <?php echo switch_theme() ?>">
         <footer class="container max-w-screen-md mx-auto">
             <p class="text-xs">
                 &copy; 2024 SERP tracker

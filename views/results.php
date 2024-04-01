@@ -1,7 +1,19 @@
 <?php require __DIR__ . '/partials/header.php'; ?>
 
-<div class="wrapper bg-zinc-200 py-10">
-    <main class="container max-w-screen-md mx-auto bg-white shadow">
+<?php 
+
+function switch_theme() {
+    if (isset($_GET['theme']) && $_GET['theme'] === 'dark') {
+        return 'bg-zinc-800 text-zinc-100';
+    } else {
+        return 'bg-zinc-200';
+    }
+}
+
+?>
+
+<div class="wrapper py-10 <?php echo switch_theme() ?>">
+    <main class="container max-w-screen-md mx-auto bg-white shadow text-black">
         <table class="w-full divide-y divide-gray-200">
             <thead>
                 <tr>

@@ -7,7 +7,7 @@
     <title>SERP tracker</title>
 </head>
 <body>
-    <div class="wrapper bg-zinc-200 pt-10">
+    <div class="wrapper <?php echo switch_theme() ?> pt-10">
         <header class="container max-w-screen-md mx-auto">
             <h1 class="text-2xl font-bold">
                 SERP tracker
