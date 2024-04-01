@@ -127,15 +127,24 @@ $input = [
     'zastavarna-bilina.cz' => [
         'zastavárna Bílina',
         'zastavárna Seifertova',
-        'zastavárna Nápravník'
+        'zastavárna Nápravník',
     ],
 ];
+
+$scrapes = [];
 
 foreach ($input as $domain => $phrases) {
     foreach ($phrases as $phrase) {
         $position = get_position($domain, $phrase);
-        echo "Position of $domain for phrase $phrase: " . $position . "<br>";
+
+        $scrapes[] = [
+            'domain' => $domain,
+            'phrase' => $phrase,
+            'position' => $position
+        ];
 
         save_to_database($domain, $phrase, $position);
     }
 }
+
+require __DIR__ . '/views/scrapes.php';

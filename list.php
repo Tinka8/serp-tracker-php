@@ -19,22 +19,6 @@ if ($results->num_rows === 0) {
     die('There is no data to display');
 }
 
-?>
-<table>
-<?php
-
 $data = $results->fetch_all(MYSQLI_ASSOC);
 
-foreach ($data as $row) {
-    ?>
-    <tr>
-        <td><?php echo $row['name'] ?></td>
-        <th scope="row"><?php echo $row['phrase_name']; ?></th>
-        <td><?php echo $row['position'] ?></td>
-        <td><?php echo $row['created_at'] ?></td>
-    </tr>
-    <?php
-}
-?>
-</table>
-<?php
+require __DIR__ . '/views/results.php';
