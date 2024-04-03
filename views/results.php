@@ -1,21 +1,5 @@
 <?php require __DIR__ . '/partials/header.php'; ?>
-
-<?php 
-
-/**
- * Get CSS classes based on query param
- * 
- * @return string CSS classes
- */
-function switch_theme(): string {
-    if (isset($_GET['theme']) && $_GET['theme'] === 'dark') {
-        return 'bg-zinc-800 text-zinc-100';
-    } else {
-        return 'bg-zinc-200';
-    }
-}
-
-?>
+<?php include_once __DIR__ . '/../functions.php' ?>
 
 <div class="wrapper py-10 <?php echo switch_theme() ?>">
     <main class="container max-w-screen-md mx-auto bg-white shadow text-black">
