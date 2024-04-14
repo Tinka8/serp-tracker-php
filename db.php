@@ -3,7 +3,7 @@
 // Database configuration
 $dbhost = 'localhost';
 $dbuser = 'root';
-$dbpass = 'matejvolesini';
+$dbpass = '';
 $dbname = 'serp-tracker-php';
 
 // Create connection
