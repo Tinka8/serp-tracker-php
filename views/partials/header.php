@@ -18,14 +18,32 @@
             <nav>
                 <ul class="flex space-x-4">
                     <li>
-                        <a href="/">
-                            Results
-                        </a>
+                        <a 
+                            href="/"
+                            class="<?php echo $_SERVER['REQUEST_URI'] === '/' ? 'underline' : '' ?>">
+                            Home</a
+                        >
                     </li>
                     <li>
-                        <a href="/scrape.php">
-                            Scrape
-                        </a>
+                        <a 
+                            href="/scrape.php"
+                            class="<?php echo $_SERVER['REQUEST_URI'] === '/scrape.php' ? 'underline' : '' ?>">
+                            Scrape</a
+                        >
+                    </li>
+                    <li>
+                        <a 
+                            href="/login.php"
+                            class="<?php echo $_SERVER['REQUEST_URI'] === '/login.php' ? 'underline' : '' ?>">
+                            Login</a
+                        >
+                    </li>
+                    <li>
+                        <a 
+                            href="/profile.php"
+                            class="<?php echo $_SERVER['REQUEST_URI'] === '/profile.php' ? 'underline' : '' ?>">
+                            Profile</a
+                        >
                     </li>
                 </ul>
             </nav>

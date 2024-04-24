@@ -32,8 +32,7 @@ class User
      *
      * @return void No return expected
      */
-    public function setPassword(string $password): void
-    {
+    public function setPassword(string $password): void {
         if (strlen($password) < 8) {
             throw new Exception("Password must be at least 8 characters long");
         }
@@ -52,12 +51,20 @@ class User
      *
      * @return void No return expected
      */
-    public function setEmail(string $email): void
-    {
+    public function setEmail(string $email): void {
         if (!strpos($email, "@")) {
             throw new Exception("Invalid email");
         }
 
         $this->email = $email;
+    }
+
+
+    public function getEmail() : string {
+        return $this->email;
+    } 
+
+    public function getPassword() : string {
+        return $this->password;
     }
 }
