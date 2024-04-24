@@ -59,12 +59,39 @@ class User
         $this->email = $email;
     }
 
-
+    /**
+     * Get user email
+     * 
+     * @return string User email 
+     */
     public function getEmail() : string {
         return $this->email;
     } 
 
+    /**
+     * Get user password
+     * 
+     * @return string User password
+     */
     public function getPassword() : string {
         return $this->password;
+    }
+
+
+    /**
+     * User create
+     *
+     * @param string $email    User email
+     * @param string $password User password
+     *
+     * @return bool True if user was created, false otherwise
+     */
+    public static function create(string $email, string $password): bool
+    {
+        include_once "db.php";
+
+        return $conn->query(
+            "INSERT INTO users (email, password, role) VALUES ('$email', '$password', 'Registered')"
+        );
     }
 }
