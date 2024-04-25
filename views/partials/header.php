@@ -45,6 +45,13 @@
                             Profile</a
                         >
                     </li>
+                    <li>
+                        <a 
+                            href="/register.php"
+                            class="<?php echo $_SERVER['REQUEST_URI'] === '/register.php' ? 'underline' : '' ?>">
+                            Register</a
+                        >
+                    </li>
                 </ul>
             </nav>
         </header>

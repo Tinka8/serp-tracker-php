@@ -14,8 +14,7 @@ include 'views/partials/header.php';
         <?php echo "Heslo: " . $user->getPassword(); ?><br />
         <?php echo "Role: " . $user->role; ?>
     </div>
-</body>
-</html>
+
 
 <?php 
 
