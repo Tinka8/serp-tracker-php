@@ -15,7 +15,6 @@ include 'views/partials/header.php';
         <?php echo "Role: " . $user->role; ?>
     </div>
 
-
 <?php 
 
 include 'views/partials/footer.php';
