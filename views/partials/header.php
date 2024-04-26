@@ -153,7 +153,7 @@ $current_page = $_SERVER['REQUEST_URI'];
     </div>
 
 
-    <header class="bg-white border-b border-zinc-100">
+    <header class="bg-white border-b border-zinc-200">
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <h1 class="text-2xl font-semibold leading-6 text-gray-900">Dashboard</h1>
     </div>

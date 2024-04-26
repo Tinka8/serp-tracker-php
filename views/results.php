@@ -2,7 +2,7 @@
 <?php include_once __DIR__ . '/../functions.php' ?>
 
 <div class="wrapper py-10 <?php echo switch_theme() ?>">
-    <main class="container max-w-screen-md mx-auto shadow">
+    <main class="container max-w-screen-md mx-auto shadow p-5">
         <table class="w-full divide-y divide-gray-200">
             <thead>
                 <tr>
