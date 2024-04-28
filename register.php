@@ -38,8 +38,7 @@ include 'views/partials/header.php';
                 Uživatel byl úspěšně zaregistrován.
             </div>
         <?php }
-        }?>
-            
+        }?>     
     </div>
 
 <?php 
